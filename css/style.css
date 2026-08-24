@@ -15,8 +15,6 @@
 body {
     font-family: vazir;
     height: 100vh;
-
-    /* بعدا برسیشود در صورت خطا */
     position: relative;
 }
 
@@ -33,16 +31,10 @@ body {
     background: #f8fafc;
     width: 380px;
     height: 480px;
-    /* اگر متن ذاخل از کادر باکس بزرگتر شود بقیه متن هاید باشد */
     overflow: hidden;
-
-    /* عرض آتو برای وسط چین شدان */
     margin: 10% auto;
-
     padding: 5px;
     border-radius: 20px;
-
-    /* تااندازه باکس های اینپوت بر اساس این صفحه ست شود */
     position: relative;
 }
 
@@ -119,7 +111,6 @@ body {
     transform: scale(1.2) rotate(390deg);
 }
 
-/* اولین المان چایلد داخل یو ال ای آی */
 .social ul li:nth-child(1) {
     display: block;
     background-color: rgb(207, 0, 0);
