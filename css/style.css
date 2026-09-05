@@ -190,11 +190,18 @@ body {
 }
 
 .input-group label {
-    margin-right: 5px;
-    font-size: 14px;
-    color: rgb(75, 75, 75);
-    cursor: pointer;
-    transition: all 0.3s ease;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.input-group input[type="checkbox"],
+.input-group label:active {
+  transform: scale(1.15);
+  color: #2563eb;
+  font-weight: 700;
 }
 
 #register {
