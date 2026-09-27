@@ -180,6 +180,7 @@ body {
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
+
 .input-group input[type="submit"]:focus {
     transform: scale(1.02);
 }
