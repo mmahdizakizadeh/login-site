@@ -2,7 +2,6 @@ const log = document.getElementById("login");
 const reg = document.getElementById("register");
 const btn = document.getElementById("btn");
 
-
 function login() {
   log.style.right = "0px";
   reg.style.right = "450px";
@@ -15,10 +14,10 @@ function register() {
   btn.style.right = "110px";
 }
 
-let username = document.getElementById("username"),
-  password = document.getElementById("password"),
-  usernameError = document.getElementById("usernameError"),
-  passwordError = document.getElementById("passwordError");
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+let usernameError = document.getElementById("usernameError");
+let passwordError = document.getElementById("passwordError");
 
 function usernameErrorfun() {
   if (username.value.length < 8) {
@@ -40,15 +39,15 @@ function passwordErrorfun() {
   }
 }
 
-let username2 = document.getElementsById("username2"),
-  password2 = document.getElementsById("password2"),
-  usernameError2 = document.getElementsById("usernameError2"),
-  passwordError2 = document.getElementsById("passwordError2");
+let username2 = document.getElementById("username2");
+let password2 = document.getElementById("password2");
+let usernameError2 = document.getElementById("usernameError2");
+let passwordError2 = document.getElementById("passwordError2");
 
-  function usernameErrorfun2() {
+function usernameErrorfun2() {
   if (username2.value.length < 8) {
     usernameError2.innerHTML = "نام کاربری معتبر نیست";
-    usernameError.style.color = "red";
+    usernameError2.style.color = "red";
   } else {
     usernameError2.innerHTML = "نام کاربری معتبر است";
     usernameError2.style.color = "green";
