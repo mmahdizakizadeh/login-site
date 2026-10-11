@@ -40,7 +40,7 @@
             class="input-field"
             placeholder="نام کاربری یا ایمیل"
             id="username"
-            onkeydown="usernameErrorfun()"
+            oninput="usernameErrorfun()"
           />
           <span id="usernameError"></span>
 
@@ -49,7 +49,7 @@
             type="password"
             class="input-field"
             placeholder="رمز عبور"
-            onkeydown="passwordErrorfun()"
+            oninput="passwordErrorfun()"
           />
           <span style="display: block" id="passwordError"></span>
           <input type="checkbox" id="chekbox" />
@@ -61,26 +61,27 @@
           <input
             type="text"
             class="input-field"
-            placeholder="نام کاربری  "
+            placeholder="نام کاربری"
             id="username2"
-            onkeydown="usernameErrorfun2()"
+            oninput="usernameErrorfun2()"
           />
           <span id="usernameError2"></span>
+
           <input
             type="email"
             pattern="[a-zA-Z0-9_%+-]+@[a-zA-Z0-9.-]+\.com"
             class="input-field"
             placeholder="ایمیل"
-            id="username2"
-            onkeydown="usernameErrorfun22()"
+            id="email2"
           />
-          <span id="usernameError22"></span>
+          <span id="emailError2"></span>
+
           <input
             type="password"
             class="input-field"
             placeholder="رمز عبور"
             id="password2"
-            onkeydown="passwordErrorfun2()"
+            oninput="passwordErrorfun2()"
           />
           <span style="display: block" id="passwordError2"></span>
           <input type="checkbox" id="chakbox" />
