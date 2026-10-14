@@ -14,52 +14,29 @@ function register() {
   btn.style.right = "110px";
 }
 
-let username = document.getElementById("username");
-let password = document.getElementById("password");
-let usernameError = document.getElementById("usernameError");
-let passwordError = document.getElementById("passwordError");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const usernameError = document.getElementById("usernameError");
+const passwordError = document.getElementById("passwordError");
 
-function usernameErrorfun() {
-  if (username.value.length < 8) {
-    usernameError.innerHTML = "نام کاربری معتبر نیست";
-    usernameError.style.color = "red";
-  } else {
-    usernameError.innerHTML = "نام کاربری معتبر است";
-    usernameError.style.color = "green";
-  }
+const username2 = document.getElementById("username2");
+const password2 = document.getElementById("password2");
+const usernameError2 = document.getElementById("usernameError2");
+const passwordError2 = document.getElementById("passwordError2");
+
+function validateInput(input, errorElement, fieldName) {
+  input.addEventListener("input", function () {
+    if (input.value.length < 8) {
+      errorElement.innerHTML = `${fieldName} معتبر نیست`;
+      errorElement.style.color = "red";
+    } else {
+      errorElement.innerHTML = `${fieldName} معتبر است`;
+      errorElement.style.color = "green";
+    }
+  });
 }
 
-function passwordErrorfun() {
-  if (password.value.length < 8) {
-    passwordError.innerHTML = "رمز عبور معتبر نیست";
-    passwordError.style.color = "red";
-  } else {
-    passwordError.innerHTML = "رمز عبور معتبر است";
-    passwordError.style.color = "green";
-  }
-}
-
-let username2 = document.getElementById("username2");
-let password2 = document.getElementById("password2");
-let usernameError2 = document.getElementById("usernameError2");
-let passwordError2 = document.getElementById("passwordError2");
-
-function usernameErrorfun2() {
-  if (username2.value.length < 8) {
-    usernameError2.innerHTML = "نام کاربری معتبر نیست";
-    usernameError2.style.color = "red";
-  } else {
-    usernameError2.innerHTML = "نام کاربری معتبر است";
-    usernameError2.style.color = "green";
-  }
-}
-
-function passwordErrorfun2() {
-  if (password2.value.length < 8) {
-    passwordError2.innerHTML = "رمز عبور معتبر نیست";
-    passwordError2.style.color = "red";
-  } else {
-    passwordError2.innerHTML = "رمز عبور معتبر است";
-    passwordError2.style.color = "green";
-  }
-}
+validateInput(username, usernameError, "نام کاربری");
+validateInput(password, passwordError, "رمز عبور");
+validateInput(username2, usernameError2, "نام کاربری");
+validateInput(password2, passwordError2, "رمز عبور");
